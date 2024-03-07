@@ -7,3 +7,6 @@
   --color-normal-2: #61876e;
   --color-2: #eae7b1;
 }
+body {
+  font-family: "Poppins", sans-serif;
+}
