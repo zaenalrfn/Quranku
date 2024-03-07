@@ -10,6 +10,7 @@
   "dependencies": {
     "autoprefixer": "^10",
     "axios": "^1.6.7",
+    "bootstrap-icons": "^1.11.3",
     "core-js": "^3.8.3",
     "postcss": "^8",
     "register-service-worker": "^1.7.2",
