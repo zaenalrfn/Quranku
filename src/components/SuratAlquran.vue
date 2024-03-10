@@ -1,5 +1,5 @@
 <template>
-  <div class="main">
+  <div class="main mt-96">
     <div class="surat">
       <div
         class="surat-nav w-full h-12 py-3.5 px-3.5 rounded-lg flex justify-between items-center mt-10 bg-[rgba(18,_25,_49,_0.05)]"
