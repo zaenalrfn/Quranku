@@ -34,20 +34,26 @@
 
       <!-- BAGIAN COMPONENT GRID CONTENT -->
       <div class="grid grid-cols-2 gap-4 mt-[22px]">
-        <div
-          class="p-3 rounded-lg bg-gradient-to-b from-[#61876E] to-[#28433A] h-[227px] flex flex-col justify-between shadow-[rgba(97,_135,_110,_0.8)_0px_20px_45px_0px]"
-        >
-          <div class="img-baca-guran mt-6">
-            <img src="../assets/img/icon_baca_quran.png" class="w-28" alt="" />
+        <router-link to="/baca_quran">
+          <div
+            class="p-3 rounded-lg bg-gradient-to-b from-[#61876E] to-[#28433A] h-[227px] flex flex-col justify-between shadow-[rgba(97,_135,_110,_0.8)_0px_20px_45px_0px]"
+          >
+            <div class="img-baca-guran mt-6">
+              <img
+                src="../assets/img/icon_baca_quran.png"
+                class="w-28"
+                alt=""
+              />
+            </div>
+            <div class="text-baca-quran flex justify-between items-center">
+              <h2 class="font-bold text-xl text-text_color_2">
+                <span class="font-medium text-base opacity-95">Baca</span
+                ><br />Quran
+              </h2>
+              <i class="bi bi-chevron-right text-text_color_2"></i>
+            </div>
           </div>
-          <div class="text-baca-quran flex justify-between items-center">
-            <h2 class="font-bold text-xl text-text_color_2">
-              <span class="font-medium text-base opacity-95">Baca</span
-              ><br />Quran
-            </h2>
-            <i class="bi bi-chevron-right text-text_color_2"></i>
-          </div>
-        </div>
+        </router-link>
         <div
           class="p-3 bg-gradient-to-b from-[#61876E] to-[#28433A] rounded-lg h-[190px] flex flex-col justify-between shadow-[rgba(97,_135,_110,_0.8)_0px_20px_45px_0px]"
         >
