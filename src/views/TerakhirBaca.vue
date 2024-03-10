@@ -7,22 +7,7 @@
   <div class="main px-6">
     <div class="bg-white fixed top-0 left-0 right-0">
       <!-- BAGIAN NAV TERAKHIR BACA -->
-      <div
-        class="nav-terakhir-baca w-full flex justify-center mt-10 m-6 relative"
-      >
-        <router-link to="/">
-          <div class="tb-kembali">
-            <h2 class="absolute left-0">
-              <i class="bi bi-chevron-left text-text_color_bold_1 text-2xl"></i>
-            </h2>
-          </div>
-        </router-link>
-        <div class="tb-text ml-[-47px]">
-          <h2 class="text-xl text-text_color_bold_1 font-bold">
-            Terakhir Baca
-          </h2>
-        </div>
-      </div>
+      <NavQuranku />
       <!-- BAGIAN BANNER TERAKHIR BACA -->
       <div
         class="tb-banner h-[220px] flex justify-center items-center p-10 mt-8 mx-6 text-text_color_2 bg-cover bg-center rounded-lg text-center shadow-[rgba(97,_135,_110,_0.8)_0px_20px_45px_0px] relative"
@@ -50,16 +35,18 @@
     </div>
 
     <!-- BAGIAN SURAT -->
-    <SuratAlquran />
+    <SuratTerakhirDibaca />
   </div>
 </template>
 
 <script>
-import SuratAlquran from "@/components/SuratAlquran.vue";
+import SuratTerakhirDibaca from "@/components/SuratTerakhirDibaca.vue";
+import NavQuranku from "@/components/Nav.vue";
 export default {
   name: "TerakhirBaca",
   components: {
-    SuratAlquran,
+    SuratTerakhirDibaca,
+    NavQuranku,
   },
 };
 </script>
