@@ -1,8 +1,10 @@
 <template>
   <div class="main">
     <div class="bg-white">
-      <NavQuranku />
-      <div class="flex fixed left-0 right-0 flex-wrap px-6">
+      <div class="fixed top-0 left-0 right-0">
+        <NavQuranku />
+      </div>
+      <div class="flex fixed top-0 left-0 right-0 flex-wrap px-6 mt-20">
         <div class="w-full">
           <!-- BAGIAN TABS -->
           <ul class="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row">
@@ -34,9 +36,7 @@
             </li>
           </ul>
           <!-- BAGIAN SURAH Dan Juz -->
-          <div
-            class="relative flex flex-col min-w-0 break-words bg-white w-full"
-          >
+          <div class="flex flex-col min-w-0 break-words bg-white">
             <div class="flex-auto">
               <div class="tab-content tab-space">
                 <!-- Surah -->
