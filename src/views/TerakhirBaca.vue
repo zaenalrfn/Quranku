@@ -1,8 +1,3 @@
-<style scoped>
-.tb-banner {
-  background-image: url("../assets/img/bg_terakhir_baca.png");
-}
-</style>
 <template>
   <div class="main px-6">
     <div class="bg-white fixed top-0 left-0 right-0">
