@@ -9,44 +9,25 @@
       <!-- BAGIAN NAV TERAKHIR BACA -->
       <NavQuranku />
       <!-- BAGIAN BANNER TERAKHIR BACA -->
-      <div
-        class="tb-banner h-[220px] flex justify-center items-center p-10 mt-8 mx-6 text-text_color_2 bg-cover bg-center rounded-lg text-center shadow-[rgba(97,_135,_110,_0.8)_0px_20px_45px_0px] relative"
-      >
-        <div class="banner">
-          <div class="tb-download absolute top-5 right-5">
-            <h2 class="text-2xl font-bold">
-              <i class="bi bi-download round"></i>
-            </h2>
-          </div>
-          <div class="tb-banner-utama">
-            <h1 class="text-[28px] font-bold">Al-FATIHAH</h1>
-            <p class="mb-2 text-xs">Pembuka</p>
-            <hr class="border-t-1 border-[#eae7b1]" />
-            <div
-              class="banner-des flex justify-center gap-2 items-center mt-3 text-xs"
-            >
-              <p>Makkiyah</p>
-              <p class="text-xl">.</p>
-              <p>7 Ayat</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <BannerQuran />
     </div>
 
     <!-- BAGIAN SURAT -->
-    <SuratTerakhirDibaca />
+    <SurahQuranku />
   </div>
 </template>
 
 <script>
-import SuratTerakhirDibaca from "@/components/SuratTerakhirDibaca.vue";
+import SurahQuranku from "@/components/SurahQuranku.vue";
 import NavQuranku from "@/components/Nav.vue";
+import BannerQuran from "@/components/Banner.vue";
+
 export default {
   name: "TerakhirBaca",
   components: {
-    SuratTerakhirDibaca,
+    SurahQuranku,
     NavQuranku,
+    BannerQuran,
   },
 };
 </script>
