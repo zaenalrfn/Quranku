@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import TerakhirBaca from "../views/TerakhirBaca.vue";
 import BacaQuran from "../views/BacaQuran.vue";
+import QuranKu from "../views/Quran.vue";
 
 const routes = [
   {
@@ -18,6 +19,11 @@ const routes = [
     path: "/baca_quran",
     name: "baca_quran",
     component: BacaQuran,
+  },
+  {
+    path: "/quran",
+    name: "equran",
+    component: QuranKu,
   },
 ];
 

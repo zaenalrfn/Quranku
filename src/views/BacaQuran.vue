@@ -1,49 +1,52 @@
 <template>
   <div class="main">
-    <div class="bg-white fixed top-0 left-0 right-0">
+    <div class="bg-white">
       <NavQuranku />
-      <div class="px-6">
-        <div class="flex flex-wrap">
-          <div class="w-full">
-            <ul class="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row">
-              <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
-                <a
-                  class="text-lg font-bold uppercase px-5 py-3 block leading-normal"
-                  v-on:click="toggleTabs(1)"
+      <div class="flex fixed left-0 right-0 flex-wrap px-6">
+        <div class="w-full">
+          <!-- BAGIAN TABS -->
+          <ul class="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row">
+            <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
+              <a
+                class="text-lg font-bold uppercase px-5 py-3 block leading-normal"
+                v-on:click="toggleTabs(1)"
+                v-bind:class="{
+                  ' bg-white text-[#ACBFB9]': openTab !== 1,
+                  'text-text_color_bold_1 border-b-2 border-b-[#3C6255]':
+                    openTab === 1,
+                }"
+              >
+                Surah
+              </a>
+            </li>
+            <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
+              <a
+                class="text-lg font-bold uppercase px-5 py-3 block leading-normal"
+                v-on:click="toggleTabs(2)"
+                v-bind:class="{
+                  ' bg-white text-[#ACBFB9]': openTab !== 2,
+                  'text-text_color_bold_1 border-b-2 border-b-[#3C6255]':
+                    openTab === 2,
+                }"
+              >
+                Juz
+              </a>
+            </li>
+          </ul>
+          <!-- BAGIAN SURAH Dan Juz -->
+          <div
+            class="relative flex flex-col min-w-0 break-words bg-white w-full"
+          >
+            <div class="flex-auto">
+              <div class="tab-content tab-space">
+                <!-- Surah -->
+                <div
                   v-bind:class="{
-                    ' bg-white text-[#ACBFB9]': openTab !== 1,
-                    'text-text_color_bold_1 border-b-2 border-b-[#3C6255]':
-                      openTab === 1,
+                    hidden: openTab !== 1,
+                    block: openTab === 1,
                   }"
                 >
-                  Surah
-                </a>
-              </li>
-              <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
-                <a
-                  class="text-lg font-bold uppercase px-5 py-3 block leading-normal"
-                  v-on:click="toggleTabs(2)"
-                  v-bind:class="{
-                    ' bg-white text-[#ACBFB9]': openTab !== 2,
-                    'text-text_color_bold_1 border-b-2 border-b-[#3C6255]':
-                      openTab === 2,
-                  }"
-                >
-                  Juz
-                </a>
-              </li>
-            </ul>
-            <div
-              class="relative flex flex-col min-w-0 break-words bg-white w-full"
-            >
-              <div class="flex-auto">
-                <div class="tab-content tab-space">
-                  <div
-                    v-bind:class="{
-                      hidden: openTab !== 1,
-                      block: openTab === 1,
-                    }"
-                  >
+                  <router-link to="/quran">
                     <div
                       class="surah flex justify-between items-center border-b-2 py-4"
                     >
@@ -73,6 +76,8 @@
                         </h3>
                       </div>
                     </div>
+                  </router-link>
+                  <router-link to="/quran">
                     <div
                       class="surah flex justify-between items-center border-b-2 py-4"
                     >
@@ -102,15 +107,53 @@
                         </h3>
                       </div>
                     </div>
-                  </div>
-                  <div
-                    v-bind:class="{
-                      hidden: openTab !== 2,
-                      block: openTab === 2,
-                    }"
-                  >
-                    <h2>Masih proses</h2>
-                  </div>
+                  </router-link>
+                </div>
+                <!-- JUZ -->
+                <div
+                  v-bind:class="{
+                    hidden: openTab !== 2,
+                    block: openTab === 2,
+                  }"
+                >
+                  <router-link to="/quran">
+                    <div class="juz border-b-2 py-4">
+                      <div class="indo-juz flex gap-4 items-center">
+                        <div class="no-juz text-text_color_bold_1 font-bold">
+                          1
+                        </div>
+                        <div class="nama-juz">
+                          <h1 class="text-lg font-bold text-text_color_bold_1">
+                            Juz 1
+                          </h1>
+                          <div
+                            class="makkiyah flex gap-3 text-xs text-[#ABBFB9]"
+                          >
+                            <p>Al-fatihah, Al-baqarah</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </router-link>
+                  <router-link to="/quran">
+                    <div class="juz border-b-2 py-4">
+                      <div class="indo-juz flex gap-4 items-center">
+                        <div class="no-juz text-text_color_bold_1 font-bold">
+                          2
+                        </div>
+                        <div class="nama-juz">
+                          <h1 class="text-lg font-bold text-text_color_bold_1">
+                            Juz 2
+                          </h1>
+                          <div
+                            class="makkiyah flex gap-3 text-xs text-[#ABBFB9]"
+                          >
+                            <p>Al-baqarah</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </router-link>
                 </div>
               </div>
             </div>

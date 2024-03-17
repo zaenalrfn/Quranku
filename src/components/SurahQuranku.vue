@@ -1,20 +1,20 @@
 <template>
   <div class="main mt-96">
-    <div class="surat-terakhir-dibaca">
+    <div class="surah-quranku">
       <div
-        class="surat-terakhir-dibaca-nav w-full h-12 py-3.5 px-3.5 rounded-lg flex justify-between items-center mt-10 bg-[rgba(18,_25,_49,_0.05)]"
+        class="surah-quranku-nav w-full h-12 py-3.5 px-3.5 rounded-lg flex justify-between items-center mt-10 bg-[rgba(18,_25,_49,_0.05)]"
       >
         <div
-          class="urut-surat-terakhir-dibaca w-5 h-5 p-3 bg-text_color_bold_1 rounded-full flex justify-center items-center"
+          class="urut-surah-quranku w-5 h-5 p-3 bg-text_color_bold_1 rounded-full flex justify-center items-center"
         >
           <h2 class="text-white">1</h2>
         </div>
-        <div class="surat-terakhir-dibaca-play-simpan flex gap-6">
+        <div class="surah-quranku-play-simpan flex gap-6">
           <h2 class="text-2xl"><i class="bi bi-play"></i></h2>
           <h2 class="text-xl"><i class="bi bi-bookmark"></i></h2>
         </div>
       </div>
-      <div class="surat-terakhir-dibaca-arab-arti">
+      <div class="surah-quranku-arab-arti">
         <h2 class="mb-4 text-right mt-3 text-4xl text-text_color_bold_1">
           بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
         </h2>
@@ -24,21 +24,21 @@
         <hr />
       </div>
     </div>
-    <div class="surat-terakhir-dibaca">
+    <div class="surah-quranku">
       <div
-        class="surat-terakhir-dibaca-nav w-full h-12 py-3.5 px-3.5 rounded-lg flex justify-between items-center mt-10 bg-[rgba(18,_25,_49,_0.05)]"
+        class="surah-quranku-nav w-full h-12 py-3.5 px-3.5 rounded-lg flex justify-between items-center mt-10 bg-[rgba(18,_25,_49,_0.05)]"
       >
         <div
-          class="urut-surat-terakhir-dibaca w-5 h-5 p-3 bg-text_color_bold_1 rounded-full flex justify-center items-center"
+          class="urut-surah-quranku w-5 h-5 p-3 bg-text_color_bold_1 rounded-full flex justify-center items-center"
         >
           <h2 class="text-white">2</h2>
         </div>
-        <div class="surat-terakhir-dibaca-play-simpan flex gap-6">
+        <div class="surah-quranku-play-simpan flex gap-6">
           <h2 class="text-2xl"><i class="bi bi-play"></i></h2>
           <h2 class="text-xl"><i class="bi bi-bookmark"></i></h2>
         </div>
       </div>
-      <div class="surat-terakhir-dibaca-arab-arti">
+      <div class="surah-quranku-arab-arti">
         <h2 class="mb-4 text-right mt-3 text-4xl text-text_color_bold_1">
           اَلْحَمْدُ لِلّٰهِ رَبِّ الْعٰلَمِيْنَۙ
         </h2>
@@ -48,21 +48,21 @@
         <hr />
       </div>
     </div>
-    <div class="surat-terakhir-dibaca">
+    <div class="surah-quranku">
       <div
-        class="surat-terakhir-dibaca-nav w-full h-12 py-3.5 px-3.5 rounded-lg flex justify-between items-center mt-10 bg-[rgba(18,_25,_49,_0.05)]"
+        class="surah-quranku-nav w-full h-12 py-3.5 px-3.5 rounded-lg flex justify-between items-center mt-10 bg-[rgba(18,_25,_49,_0.05)]"
       >
         <div
-          class="urut-surat-terakhir-dibaca w-5 h-5 p-3 bg-text_color_bold_1 rounded-full flex justify-center items-center"
+          class="urut-surah-quranku w-5 h-5 p-3 bg-text_color_bold_1 rounded-full flex justify-center items-center"
         >
           <h2 class="text-white">3</h2>
         </div>
-        <div class="surat-terakhir-dibaca-play-simpan flex gap-6">
+        <div class="surah-quranku-play-simpan flex gap-6">
           <h2 class="text-2xl"><i class="bi bi-play"></i></h2>
           <h2 class="text-xl"><i class="bi bi-bookmark"></i></h2>
         </div>
       </div>
-      <div class="surat-terakhir-dibaca-arab-arti">
+      <div class="surah-quranku-arab-arti">
         <h2 class="mb-4 text-right mt-3 text-4xl text-text_color_bold_1">
           الرَّحْمٰنِ الرَّحِيْمِۙ
         </h2>
@@ -72,21 +72,21 @@
         <hr />
       </div>
     </div>
-    <div class="surat-terakhir-dibaca">
+    <div class="surah-quranku">
       <div
-        class="surat-terakhir-dibaca-nav w-full h-12 py-3.5 px-3.5 rounded-lg flex justify-between items-center mt-10 bg-[rgba(18,_25,_49,_0.05)]"
+        class="surah-quranku-nav w-full h-12 py-3.5 px-3.5 rounded-lg flex justify-between items-center mt-10 bg-[rgba(18,_25,_49,_0.05)]"
       >
         <div
-          class="urut-surat-terakhir-dibaca w-5 h-5 p-3 bg-text_color_bold_1 rounded-full flex justify-center items-center"
+          class="urut-surah-quranku w-5 h-5 p-3 bg-text_color_bold_1 rounded-full flex justify-center items-center"
         >
           <h2 class="text-white">4</h2>
         </div>
-        <div class="surat-terakhir-dibaca-play-simpan flex gap-6">
+        <div class="surah-quranku-play-simpan flex gap-6">
           <h2 class="text-2xl"><i class="bi bi-play"></i></h2>
           <h2 class="text-xl"><i class="bi bi-bookmark"></i></h2>
         </div>
       </div>
-      <div class="surat-terakhir-dibaca-arab-arti">
+      <div class="surah-quranku-arab-arti">
         <h2 class="mb-4 text-right mt-3 text-4xl text-text_color_bold_1">
           مٰلِكِ يَوْمِ الدِّيْنِۗ
         </h2>
@@ -96,21 +96,21 @@
         <hr />
       </div>
     </div>
-    <div class="surat-terakhir-dibaca">
+    <div class="surah-quranku">
       <div
-        class="surat-terakhir-dibaca-nav w-full h-12 py-3.5 px-3.5 rounded-lg flex justify-between items-center mt-10 bg-[rgba(18,_25,_49,_0.05)]"
+        class="surah-quranku-nav w-full h-12 py-3.5 px-3.5 rounded-lg flex justify-between items-center mt-10 bg-[rgba(18,_25,_49,_0.05)]"
       >
         <div
-          class="urut-surat-terakhir-dibaca w-5 h-5 p-3 bg-text_color_bold_1 rounded-full flex justify-center items-center"
+          class="urut-surah-quranku w-5 h-5 p-3 bg-text_color_bold_1 rounded-full flex justify-center items-center"
         >
           <h2 class="text-white">5</h2>
         </div>
-        <div class="surat-terakhir-dibaca-play-simpan flex gap-6">
+        <div class="surah-quranku-play-simpan flex gap-6">
           <h2 class="text-2xl"><i class="bi bi-play"></i></h2>
           <h2 class="text-xl"><i class="bi bi-bookmark"></i></h2>
         </div>
       </div>
-      <div class="surat-terakhir-dibaca-arab-arti">
+      <div class="surah-quranku-arab-arti">
         <h2 class="mb-4 text-right mt-3 text-4xl text-text_color_bold_1">
           اِيَّاكَ نَعْبُدُ وَاِيَّاكَ نَسْتَعِيْنُۗ
         </h2>
@@ -121,21 +121,21 @@
         <hr />
       </div>
     </div>
-    <div class="surat-terakhir-dibaca">
+    <div class="surah-quranku">
       <div
-        class="surat-terakhir-dibaca-nav w-full h-12 py-3.5 px-3.5 rounded-lg flex justify-between items-center mt-10 bg-[rgba(18,_25,_49,_0.05)]"
+        class="surah-quranku-nav w-full h-12 py-3.5 px-3.5 rounded-lg flex justify-between items-center mt-10 bg-[rgba(18,_25,_49,_0.05)]"
       >
         <div
-          class="urut-surat-terakhir-dibaca w-5 h-5 p-3 bg-text_color_bold_1 rounded-full flex justify-center items-center"
+          class="urut-surah-quranku w-5 h-5 p-3 bg-text_color_bold_1 rounded-full flex justify-center items-center"
         >
           <h2 class="text-white">6</h2>
         </div>
-        <div class="surat-terakhir-dibaca-play-simpan flex gap-6">
+        <div class="surah-quranku-play-simpan flex gap-6">
           <h2 class="text-2xl"><i class="bi bi-play"></i></h2>
           <h2 class="text-xl"><i class="bi bi-bookmark"></i></h2>
         </div>
       </div>
-      <div class="surat-terakhir-dibaca-arab-arti">
+      <div class="surah-quranku-arab-arti">
         <h2 class="mb-4 text-right mt-3 text-4xl text-text_color_bold_1">
           اِهْدِنَا الصِّرَاطَ الْمُسْتَقِيْمَۙ
         </h2>
@@ -145,21 +145,21 @@
         <hr />
       </div>
     </div>
-    <div class="surat-terakhir-dibaca">
+    <div class="surah-quranku">
       <div
-        class="surat-terakhir-dibaca-nav w-full h-12 py-3.5 px-3.5 rounded-lg flex justify-between items-center mt-10 bg-[rgba(18,_25,_49,_0.05)]"
+        class="surah-quranku-nav w-full h-12 py-3.5 px-3.5 rounded-lg flex justify-between items-center mt-10 bg-[rgba(18,_25,_49,_0.05)]"
       >
         <div
-          class="urut-surat-terakhir-dibaca w-5 h-5 p-3 bg-text_color_bold_1 rounded-full flex justify-center items-center"
+          class="urut-surah-quranku w-5 h-5 p-3 bg-text_color_bold_1 rounded-full flex justify-center items-center"
         >
           <h2 class="text-white">7</h2>
         </div>
-        <div class="surat-terakhir-dibaca-play-simpan flex gap-6">
+        <div class="surah-quranku-play-simpan flex gap-6">
           <h2 class="text-2xl"><i class="bi bi-play"></i></h2>
           <h2 class="text-xl"><i class="bi bi-bookmark"></i></h2>
         </div>
       </div>
-      <div class="surat-terakhir-dibaca-arab-arti">
+      <div class="surah-quranku-arab-arti">
         <h2 class="mb-4 text-right mt-3 text-4xl text-text_color_bold_1">
           صِرَاطَ الَّذِيْنَ اَنْعَمْتَ عَلَيْهِمْ ەۙ غَيْرِ الْمَغْضُوْبِ
           عَلَيْهِمْ وَلَا الضَّاۤلِّيْنَ ࣖ
@@ -176,6 +176,6 @@
 </template>
 <script>
 export default {
-  name: "SuratTerakhirDibaca",
+  name: "SurahQuranku",
 };
 </script>
