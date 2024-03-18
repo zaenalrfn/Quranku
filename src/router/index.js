@@ -3,6 +3,7 @@ import HomeView from "../views/HomeView.vue";
 import TerakhirBaca from "../views/TerakhirBaca.vue";
 import BacaQuran from "../views/BacaQuran.vue";
 import QuranKu from "../views/Quran.vue";
+import PencarianQuranku from "../views/Pencarian.vue";
 
 const routes = [
   {
@@ -24,6 +25,11 @@ const routes = [
     path: "/quran",
     name: "equran",
     component: QuranKu,
+  },
+  {
+    path: "/pencarian",
+    name: "pencarian",
+    component: PencarianQuranku,
   },
 ];
 
