@@ -8,7 +8,9 @@
       </div>
     </router-link>
     <div class="tb-text ml-[-47px]">
-      <h2 class="text-xl text-text_color_bold_1 font-bold">Terakhir Baca</h2>
+      <h2 class="text-xl text-text_color_bold_1 font-bold">
+        {{ $route.meta.title }}
+      </h2>
     </div>
   </div>
 </template>

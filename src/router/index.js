@@ -10,26 +10,41 @@ const routes = [
     path: "/",
     name: "home",
     component: HomeView,
+    meta: {
+      title: "Home",
+    },
   },
   {
     path: "/Terakhir_baca",
     name: "terakhir_baca",
     component: TerakhirBaca,
+    meta: {
+      title: "Terakhir Baca",
+    },
   },
   {
     path: "/baca_quran",
     name: "baca_quran",
     component: BacaQuran,
+    meta: {
+      title: "Baca Quran",
+    },
   },
   {
     path: "/quran",
     name: "equran",
     component: QuranKu,
+    meta: {
+      title: "Quranku",
+    },
   },
   {
     path: "/pencarian",
     name: "pencarian",
     component: PencarianQuranku,
+    meta: {
+      title: "Pencarian",
+    },
   },
 ];
 
