@@ -6,7 +6,7 @@
 <template>
   <div class="main">
     <div
-      class="tb-banner h-[220px] flex justify-center items-center p-10 mt-8 mx-6 text-text_color_2 bg-cover bg-center rounded-lg text-center shadow-[rgba(97,_135,_110,_0.8)_0px_20px_45px_0px] relative"
+      class="tb-banner h-[220px] flex justify-center items-center p-10 mt-8 mx-6 text-text_color_2 bg-cover bg-center rounded-lg text-center shadow-[rgba(97,_135,_110,_0.8)_0px_15px_30px_0px] relative"
     >
       <div class="banner">
         <div class="tb-download absolute top-5 right-5">
