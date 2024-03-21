@@ -19,7 +19,7 @@
       <!-- BAGIAN COMPONENT TERAKHIR DIBACA -->
       <router-link to="/Terakhir_baca">
         <div
-          class="terakhir-dibaca py-8 px-3 mt-8 w-full bg-cover bg-center rounded-lg text-text_color_2 shadow-[rgba(97,_135,_110,_0.8)_0px_20px_45px_0px]"
+          class="terakhir-dibaca py-8 px-3 mt-8 w-full bg-cover bg-center rounded-lg text-text_color_2 shadow-[rgba(97,_135,_110,_0.8)_0px_15px_30px_0px]"
         >
           <h3 class="text-base font-medium">Terakhir baca</h3>
           <h1 class="text-2xl font-bold text-text_color_2 pt-2 pb-4">
@@ -36,7 +36,7 @@
       <div class="grid grid-cols-2 gap-4 mt-[22px]">
         <router-link to="/baca_quran">
           <div
-            class="p-3 rounded-lg bg-gradient-to-b from-[#61876E] to-[#28433A] h-[227px] flex flex-col justify-between shadow-[rgba(97,_135,_110,_0.8)_0px_20px_45px_0px]"
+            class="p-3 rounded-lg bg-gradient-to-b from-[#61876E] to-[#28433A] h-[227px] flex flex-col justify-between shadow-[rgba(97,_135,_110,_0.8)_0px_15px_30px_0px]"
           >
             <div class="img-baca-guran mt-6">
               <img
@@ -56,7 +56,7 @@
         </router-link>
         <router-link to="/pencarian">
           <div
-            class="p-3 bg-gradient-to-b from-[#61876E] to-[#28433A] rounded-lg h-[190px] flex flex-col justify-between shadow-[rgba(97,_135,_110,_0.8)_0px_20px_45px_0px]"
+            class="p-3 bg-gradient-to-b from-[#61876E] to-[#28433A] rounded-lg h-[190px] flex flex-col justify-between shadow-[rgba(97,_135,_110,_0.8)_0px_15px_30px_0px]"
           >
             <div class="img-baca-guran mt-6">
               <img src="../assets/img/icon_pencarian.png" class="w-20" alt="" />
@@ -68,7 +68,7 @@
           </div>
         </router-link>
         <div
-          class="p-3 rounded-lg bg-gradient-to-b from-[#61876E] to-[#28433A] h-[190px] flex flex-col justify-between shadow-[rgba(97,_135,_110,_0.8)_0px_20px_45px_0px]"
+          class="p-3 rounded-lg bg-gradient-to-b from-[#61876E] to-[#28433A] h-[190px] flex flex-col justify-between shadow-[rgba(97,_135,_110,_0.8)_0px_15px_30px_0px]"
         >
           <div class="img-baca-guran">
             <img src="../assets/img/icon_sholat.png" class="w-24" alt="" />
@@ -82,7 +82,7 @@
           </div>
         </div>
         <div
-          class="p-3 rounded-lg bg-gradient-to-b from-[#61876E] to-[#28433A] h-[227px] mt-[-35px] flex flex-col justify-between shadow-[rgba(97,_135,_110,_0.8)_0px_20px_45px_0px]"
+          class="p-3 rounded-lg bg-gradient-to-b from-[#61876E] to-[#28433A] h-[227px] mt-[-35px] flex flex-col justify-between shadow-[rgba(97,_135,_110,_0.8)_0px_15px_30px_0px]"
         >
           <div class="img-baca-guran mt-6">
             <img src="../assets/img/icon_simpan.png" class="w-20" alt="" />
