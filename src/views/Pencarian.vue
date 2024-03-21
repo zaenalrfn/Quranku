@@ -28,8 +28,40 @@
       <!-- bagian surah -->
       <div
         ref="container"
-        class="container relative w-full h-20 mt-6 rounded-lg bg-gradient-to-r from-[#61876E] to-[#28433A]"
-      ></div>
+        class="container relative w-full p-4 mt-6 rounded-lg bg-gradient-to-r from-[#61876E] to-[#28433A] shadow-[rgba(97,_135,_110,_0.8)_0px_15px_30px_0px]"
+      >
+        <div
+          class="content-pencarian flex justify-between items-center text-text_color_2"
+        >
+          <div class="title-pencarian text-center font-semibold">
+            <h2 class="text-xl">AL-Fatihah</h2>
+            <p class="arti-pencarian text-xs">Pembuka</p>
+          </div>
+          <div class="des-pencarian flex text-xs gap-2">
+            <p>Makkiyah</p>
+            <p>.</p>
+            <p>7 ayat</p>
+          </div>
+        </div>
+      </div>
+      <div
+        ref="container"
+        class="container relative w-full p-4 mt-6 rounded-lg bg-gradient-to-r from-[#61876E] to-[#28433A] shadow-[rgba(97,_135,_110,_0.8)_0px_15px_30px_0px]"
+      >
+        <div
+          class="content-pencarian flex justify-between items-center text-text_color_2"
+        >
+          <div class="title-pencarian text-center font-semibold">
+            <h2 class="text-xl">AL-Fatihah</h2>
+            <p class="arti-pencarian text-xs">Pembuka</p>
+          </div>
+          <div class="des-pencarian flex text-xs gap-2">
+            <p>Makkiyah</p>
+            <p>.</p>
+            <p>7 ayat</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
