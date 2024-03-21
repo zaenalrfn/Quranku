@@ -17,7 +17,9 @@
           Waktunya Sholat Isya
         </h2>
       </div>
-      <div class="js-banner w-full h-[168px] bg-center bg-cover p-3.5">
+      <div
+        class="js-banner w-full h-[168px] bg-center bg-cover p-3.5 shadow-[rgba(97,_135,_110,_0.8)_0px_15px_30px_0px] rounded-lg"
+      >
         <div class="js-kota-qiblat flex justify-between">
           <div
             class="js-kota flex items-center bg-[#A6BB8D] rounded-md px-1.5 text-text_color_bold_1 font-medium gap-1 py-[2px]"
