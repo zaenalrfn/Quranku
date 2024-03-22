@@ -27,7 +27,6 @@
       </div>
       <!-- bagian surah -->
       <div
-        ref="containers"
         class="container relative w-full p-4 mt-6 rounded-lg bg-gradient-to-r from-[#61876E] to-[#28433A] shadow-[rgba(97,_135,_110,_0.8)_0px_15px_30px_0px]"
       >
         <div
@@ -45,7 +44,6 @@
         </div>
       </div>
       <div
-        ref="containers"
         class="container relative w-full p-4 mt-6 rounded-lg bg-gradient-to-r from-[#61876E] to-[#28433A] shadow-[rgba(97,_135,_110,_0.8)_0px_15px_30px_0px]"
       >
         <div
