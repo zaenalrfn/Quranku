@@ -39,10 +39,10 @@
           <hr class="border-t-1 border-[#eae7b1] py-1" />
           <h4 class="text-base">Terlewat 5 Menit</h4>
         </div>
-        <div class="js-tanggal flex justify-between text-text_color_2 text-xs">
-          <p>26 Rajab 1444h</p>
-          <p>17 Februari 2023</p>
-        </div>
+      </div>
+      <div class="js-tanggal flex justify-between">
+        <p>26 Rajab 1444h</p>
+        <p>17 Februari 2023</p>
       </div>
     </div>
   </div>
