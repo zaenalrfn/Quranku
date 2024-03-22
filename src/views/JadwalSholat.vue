@@ -17,7 +17,9 @@
           Waktunya Sholat Isya
         </h2>
       </div>
-      <div class="js-banner w-full h-[168px] bg-center bg-cover p-3.5">
+      <div
+        class="js-banner w-full bg-center bg-cover p-3.5 shadow-[rgba(97,_135,_110,_0.8)_0px_15px_30px_0px] rounded-lg"
+      >
         <div class="js-kota-qiblat flex justify-between">
           <div
             class="js-kota flex items-center bg-[#A6BB8D] rounded-md px-1.5 text-text_color_bold_1 font-medium gap-1 py-[2px]"
@@ -39,10 +41,10 @@
           <hr class="border-t-1 border-[#eae7b1] py-1" />
           <h4 class="text-base">Terlewat 5 Menit</h4>
         </div>
-      </div>
-      <div class="js-tanggal flex justify-between">
-        <p>26 Rajab 1444h</p>
-        <p>17 Februari 2023</p>
+        <div class="js-tanggal flex justify-between text-xs text-text_color_2">
+          <p>26 Rajab 1444h</p>
+          <p>17 Februari 2023</p>
+        </div>
       </div>
     </div>
   </div>
