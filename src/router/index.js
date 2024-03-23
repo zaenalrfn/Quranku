@@ -5,6 +5,7 @@ import BacaQuran from "../views/BacaQuran.vue";
 import QuranKu from "../views/Quran.vue";
 import PencarianQuranku from "../views/Pencarian.vue";
 import JadwalSholat from "../views/JadwalSholat.vue";
+import TersimpanQuranku from "@/views/Tersimpan.vue";
 
 const routes = [
   {
@@ -53,6 +54,14 @@ const routes = [
     component: JadwalSholat,
     meta: {
       title: "Jadwal Sholat",
+    },
+  },
+  {
+    path: "/tersimpan",
+    name: "tersimpan",
+    component: TersimpanQuranku,
+    meta: {
+      title: "Tersimpan",
     },
   },
 ];
