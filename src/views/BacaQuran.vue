@@ -97,44 +97,36 @@
                     block: openTab === 2,
                   }"
                 >
-                  <router-link to="/quran">
-                    <div class="juz border-b-2 py-4">
-                      <div class="indo-juz flex gap-4 items-center">
-                        <div class="no-juz text-text_color_bold_1 font-bold">
-                          1
-                        </div>
-                        <div class="nama-juz">
-                          <h1 class="text-lg font-bold text-text_color_bold_1">
-                            Juz 1
-                          </h1>
-                          <div
-                            class="makkiyah flex gap-3 text-xs text-[#ABBFB9]"
-                          >
-                            <p>Al-fatihah, Al-baqarah</p>
+                  <div
+                    class="content-juz"
+                    v-for="(juzQuranku, index) in Juz"
+                    :key="index"
+                  >
+                    <router-link to="/quran">
+                      <div class="juz border-b-2 py-4">
+                        <div class="indo-juz flex gap-4 items-center">
+                          <div class="no-juz text-text_color_bold_1 font-bold">
+                            {{ juzQuranku.number }}
+                          </div>
+                          <div class="nama-juz">
+                            <h1
+                              class="text-lg font-bold text-text_color_bold_1"
+                            >
+                              {{ juzQuranku.name }}
+                            </h1>
+                            <div
+                              class="makkiyah flex gap-3 text-xs text-[#ABBFB9]"
+                            >
+                              <p>
+                                {{ juzQuranku.name_start_id }},
+                                {{ juzQuranku.name_end_id }}
+                              </p>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </router-link>
-                  <router-link to="/quran">
-                    <div class="juz border-b-2 py-4">
-                      <div class="indo-juz flex gap-4 items-center">
-                        <div class="no-juz text-text_color_bold_1 font-bold">
-                          2
-                        </div>
-                        <div class="nama-juz">
-                          <h1 class="text-lg font-bold text-text_color_bold_1">
-                            Juz 2
-                          </h1>
-                          <div
-                            class="makkiyah flex gap-3 text-xs text-[#ABBFB9]"
-                          >
-                            <p>Al-baqarah</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </router-link>
+                    </router-link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -157,10 +149,12 @@ export default {
     return {
       openTab: 1,
       Surah: null,
+      Juz: null,
     };
   },
   mounted() {
     this.getSurah();
+    this.getJuz();
   },
   methods: {
     toggleTabs: function (tabNumber) {
@@ -172,9 +166,18 @@ export default {
           "https://api.myquran.com/v2/quran/surat/semua"
         );
         this.Surah = response.data.data;
-        console.log(this.Surah);
       } catch (error) {
         console.error(error);
+      }
+    },
+    async getJuz() {
+      try {
+        const response = await axios.get(
+          "https://api.myquran.com/v2/quran/juz/semua"
+        );
+        this.Juz = response.data.data;
+      } catch (error) {
+        console.log(error);
       }
     },
   },
