@@ -83,17 +83,19 @@
             </div>
           </div>
         </router-link>
-        <div
-          class="p-3 rounded-lg bg-gradient-to-b from-[#61876E] to-[#28433A] h-[227px] mt-[-35px] flex flex-col justify-between shadow-[rgba(97,_135,_110,_0.8)_0px_15px_30px_0px]"
-        >
-          <div class="img-baca-guran mt-6">
-            <img src="../assets/img/icon_simpan.png" class="w-20" alt="" />
+        <router-link to="/tersimpan">
+          <div
+            class="p-3 rounded-lg bg-gradient-to-b from-[#61876E] to-[#28433A] h-[227px] mt-[-35px] flex flex-col justify-between shadow-[rgba(97,_135,_110,_0.8)_0px_15px_30px_0px]"
+          >
+            <div class="img-baca-guran mt-6">
+              <img src="../assets/img/icon_simpan.png" class="w-20" alt="" />
+            </div>
+            <div class="text-baca-quran flex justify-between items-center">
+              <h2 class="font-bold text-xl text-text_color_2">Tersimpan</h2>
+              <i class="bi bi-chevron-right text-text_color_2"></i>
+            </div>
           </div>
-          <div class="text-baca-quran flex justify-between items-center">
-            <h2 class="font-bold text-xl text-text_color_2">Tersimpan</h2>
-            <i class="bi bi-chevron-right text-text_color_2"></i>
-          </div>
-        </div>
+        </router-link>
       </div>
     </div>
   </div>
