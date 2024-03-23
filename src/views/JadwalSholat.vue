@@ -46,16 +46,85 @@
           <p>17 Februari 2023</p>
         </div>
       </div>
+      <!-- bagian jadwal sholat lima waktu -->
+      <div
+        class="js-sholat grid sm:grid-cols-1 mt-9 md:grid-cols-2 gap-4 pb-14"
+      >
+        <div
+          class="container relative w-full p-4 rounded-lg bg-gradient-to-r from-[#61876E] to-[#28433A] shadow-[rgba(97,_135,_110,_0.8)_0px_15px_30px_0px]"
+        >
+          <div
+            class="content-pencarian flex justify-between items-center text-text_color_2"
+          >
+            <div class="title-pencarian text-center font-semibold">
+              <h2 class="text-xl">Subuh</h2>
+            </div>
+            <div class="des-pencarian flex item-center gap-2">
+              <h2 class="text-xl">18.00</h2>
+              <h2 class="text-xl"><i class="bi bi-clock"></i></h2>
+            </div>
+          </div>
+        </div>
+        <div
+          class="container relative w-full p-4 rounded-lg bg-gradient-to-r from-[#61876E] to-[#28433A] shadow-[rgba(97,_135,_110,_0.8)_0px_15px_30px_0px]"
+        >
+          <div
+            class="content-pencarian flex justify-between items-center text-text_color_2"
+          >
+            <div class="title-pencarian text-center font-semibold">
+              <h2 class="text-xl">Dzhuhur</h2>
+            </div>
+            <div class="des-pencarian flex item-center gap-2">
+              <h2 class="text-xl">18.00</h2>
+              <h2 class="text-xl"><i class="bi bi-clock"></i></h2>
+            </div>
+          </div>
+        </div>
+        <div
+          class="container relative w-full p-4 rounded-lg bg-gradient-to-r from-[#61876E] to-[#28433A] shadow-[rgba(97,_135,_110,_0.8)_0px_15px_30px_0px]"
+        >
+          <div
+            class="content-pencarian flex justify-between items-center text-text_color_2"
+          >
+            <div class="title-pencarian text-center font-semibold">
+              <h2 class="text-xl">Ashar</h2>
+            </div>
+            <div class="des-pencarian flex item-center gap-2">
+              <h2 class="text-xl">18.00</h2>
+              <h2 class="text-xl"><i class="bi bi-clock"></i></h2>
+            </div>
+          </div>
+        </div>
+        <div
+          class="container relative w-full p-4 rounded-lg bg-gradient-to-r from-[#61876E] to-[#28433A] shadow-[rgba(97,_135,_110,_0.8)_0px_15px_30px_0px]"
+        >
+          <div
+            class="content-pencarian flex justify-between items-center text-text_color_2"
+          >
+            <div class="title-pencarian text-center font-semibold">
+              <h2 class="text-xl">Maghrib</h2>
+            </div>
+            <div class="des-pencarian flex item-center gap-2">
+              <h2 class="text-xl">18.00</h2>
+              <h2 class="text-xl"><i class="bi bi-clock"></i></h2>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import { createCircles } from "@/views/fungsi/app.js";
 import NavQuranku from "@/components/Nav.vue";
 export default {
   name: "JadwalSholat",
   components: {
     NavQuranku,
+  },
+  mounted() {
+    createCircles(50);
   },
 };
 </script>
