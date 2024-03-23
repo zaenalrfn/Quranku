@@ -10,11 +10,11 @@
         <ul class="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row">
           <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
             <a
-              class="text-lg font-bold uppercase px-5 py-3 block leading-normal"
+              class="font-medium px-5 py-3 block leading-normal text-[16px]"
               v-on:click="toggleTabs(1)"
               v-bind:class="{
-                ' bg-white text-[#ACBFB9]': openTab !== 1,
-                'text-text_color_bold_1 border-b-2 border-b-[#3C6255]':
+                ' bg-white text-text_color_bold_1': openTab !== 1,
+                'text-text_color_2 bg-text_color_bold_1 rounded-lg':
                   openTab === 1,
               }"
             >
@@ -23,15 +23,15 @@
           </li>
           <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
             <a
-              class="text-lg font-bold uppercase px-5 py-3 block leading-normal"
+              class="text-[16px] font-medium px-5 py-3 block leading-normal"
               v-on:click="toggleTabs(2)"
               v-bind:class="{
-                ' bg-white text-[#ACBFB9]': openTab !== 2,
-                'text-text_color_bold_1 border-b-2 border-b-[#3C6255]':
+                ' bg-white text-text_color_bold_1': openTab !== 2,
+                'text-text_color_2 bg-text_color_bold_1 rounded-lg':
                   openTab === 2,
               }"
             >
-              Juz
+              Ayat
             </a>
           </li>
         </ul>
@@ -113,36 +113,33 @@
                 }"
               >
                 <router-link to="/quran">
-                  <div class="juz border-b-2 py-4">
-                    <div class="indo-juz flex gap-4 items-center">
-                      <div class="no-juz text-text_color_bold_1 font-bold">
-                        1
+                  <div class="surah-quranku">
+                    <div
+                      class="surah-quranku-nav w-full h-12 py-3.5 px-3.5 rounded-lg flex justify-between items-center mt-10 bg-[rgba(18,_25,_49,_0.05)]"
+                    >
+                      <div
+                        class="urut-surah-quranku w-5 h-5 p-3 bg-text_color_bold_1 rounded-full flex justify-center items-center"
+                      >
+                        <h2 class="text-white">7</h2>
                       </div>
-                      <div class="nama-juz">
-                        <h1 class="text-lg font-bold text-text_color_bold_1">
-                          Juz 1
-                        </h1>
-                        <div class="makkiyah flex gap-3 text-xs text-[#ABBFB9]">
-                          <p>Al-fatihah, Al-baqarah</p>
-                        </div>
+                      <div class="surah-quranku-play-simpan flex gap-6">
+                        <h2 class="text-2xl"><i class="bi bi-play"></i></h2>
+                        <h2 class="text-xl"><i class="bi bi-bookmark"></i></h2>
                       </div>
                     </div>
-                  </div>
-                </router-link>
-                <router-link to="/quran">
-                  <div class="juz border-b-2 py-4">
-                    <div class="indo-juz flex gap-4 items-center">
-                      <div class="no-juz text-text_color_bold_1 font-bold">
-                        2
-                      </div>
-                      <div class="nama-juz">
-                        <h1 class="text-lg font-bold text-text_color_bold_1">
-                          Juz 2
-                        </h1>
-                        <div class="makkiyah flex gap-3 text-xs text-[#ABBFB9]">
-                          <p>Al-baqarah</p>
-                        </div>
-                      </div>
+                    <div class="surah-quranku-arab-arti">
+                      <h2
+                        class="mb-4 text-right mt-3 text-4xl text-text_color_bold_1"
+                      >
+                        صِرَاطَ الَّذِيْنَ اَنْعَمْتَ عَلَيْهِمْ ەۙ غَيْرِ
+                        الْمَغْضُوْبِ عَلَيْهِمْ وَلَا الضَّاۤلِّيْنَ ࣖ
+                      </h2>
+                      <p class="text-text_color_bold_1 text-[16px] mb-4">
+                        (yaitu) jalan orang-orang yang telah Engkau beri nikmat
+                        kepadanya; bukan (jalan) mereka yang dimurkai, dan bukan
+                        (pula jalan) mereka yang sesat.
+                      </p>
+                      <hr />
                     </div>
                   </div>
                 </router-link>

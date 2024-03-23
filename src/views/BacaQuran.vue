@@ -10,7 +10,7 @@
           <ul class="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row">
             <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
               <a
-                class="text-lg font-bold uppercase px-5 py-3 block leading-normal"
+                class="text-lg font-medium px-5 py-3 block leading-normal"
                 v-on:click="toggleTabs(1)"
                 v-bind:class="{
                   ' bg-white text-[#ACBFB9]': openTab !== 1,
@@ -23,7 +23,7 @@
             </li>
             <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
               <a
-                class="text-lg font-bold uppercase px-5 py-3 block leading-normal"
+                class="text-lg font-medium px-5 py-3 block leading-normal"
                 v-on:click="toggleTabs(2)"
                 v-bind:class="{
                   ' bg-white text-[#ACBFB9]': openTab !== 2,
