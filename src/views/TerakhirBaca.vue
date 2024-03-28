@@ -4,11 +4,11 @@
       <!-- BAGIAN NAV TERAKHIR BACA -->
       <NavQuranku />
       <!-- BAGIAN BANNER TERAKHIR BACA -->
-      <BannerQuran :infoTerkahirDibaca="infoSurah" />
+      <BannerQuran :infoSurat="infoSurah" />
     </div>
 
     <!-- BAGIAN SURAT -->
-    <SurahQuranku :surahTerakhirBaca="surahTerakhirBaca" />
+    <SurahQuranku :dataSurah="surahTerakhirBaca" />
   </div>
 </template>
 
@@ -31,8 +31,8 @@ export default {
     };
   },
   mounted() {
-    this.surahTerakhirBaca = localStorage.getItem("DATA-SURAH");
-    this.infoSurah = localStorage.getItem("INFO-SURAH");
+    this.surahTerakhirBaca = JSON.parse(localStorage.getItem("DATA-SURAH"));
+    this.infoSurah = JSON.parse(localStorage.getItem("INFO-SURAH"));
   },
 };
 </script>
