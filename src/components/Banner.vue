@@ -15,15 +15,17 @@
           </h2>
         </div>
         <div class="tb-banner-utama">
-          <h1 class="text-[28px] font-bold">Al-FATIHAH</h1>
-          <p class="mb-2 text-xs">Pembuka</p>
+          <h1 class="text-[28px] font-bold">
+            {{ infoSurat.name_id }}
+          </h1>
+          <p class="mb-2 text-xs">{{ infoSurat.translation_id }}</p>
           <hr class="border-t-1 border-[#eae7b1]" />
           <div
             class="banner-des flex justify-center gap-2 items-center mt-3 text-xs"
           >
-            <p>Makkiyah</p>
+            <p>{{ infoSurat.revelation_id }}</p>
             <p class="text-xl">.</p>
-            <p>7 Ayat</p>
+            <p>{{ infoSurat.number_of_verses }} Ayat</p>
           </div>
         </div>
       </div>
@@ -34,5 +36,11 @@
 <script>
 export default {
   name: "BannerQuran",
+  props: {
+    infoSurat: {
+      type: Object,
+      required: true,
+    },
+  },
 };
 </script>

@@ -53,7 +53,7 @@
                     v-for="(surahquranku, index) in Surah"
                     :key="index"
                   >
-                    <router-link to="/quran">
+                    <router-link :to="/quran/ + surahquranku.number">
                       <div
                         class="surah flex justify-between items-center border-b-2 py-4"
                       >

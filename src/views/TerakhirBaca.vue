@@ -4,11 +4,11 @@
       <!-- BAGIAN NAV TERAKHIR BACA -->
       <NavQuranku />
       <!-- BAGIAN BANNER TERAKHIR BACA -->
-      <BannerQuran />
+      <BannerQuran :infoTerkahirDibaca="infoSurah" />
     </div>
 
     <!-- BAGIAN SURAT -->
-    <SurahQuranku />
+    <SurahQuranku :surahTerakhirBaca="surahTerakhirBaca" />
   </div>
 </template>
 
@@ -23,6 +23,16 @@ export default {
     SurahQuranku,
     NavQuranku,
     BannerQuran,
+  },
+  data() {
+    return {
+      surahTerakhirBaca: [],
+      infoSurah: [],
+    };
+  },
+  mounted() {
+    this.surahTerakhirBaca = localStorage.getItem("DATA-SURAH");
+    this.infoSurah = localStorage.getItem("INFO-SURAH");
   },
 };
 </script>

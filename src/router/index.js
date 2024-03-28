@@ -25,7 +25,7 @@ const routes = [
     },
   },
   {
-    path: "/baca_quran",
+    path: "/baca_quran", 
     name: "baca_quran",
     component: BacaQuran,
     meta: {
@@ -33,12 +33,14 @@ const routes = [
     },
   },
   {
-    path: "/quran",
+    path: "/quran/:id",
     name: "equran",
     component: QuranKu,
     meta: {
       title: "Quranku",
+      backPath: "/baca_quran",
     },
+    props: true,
   },
   {
     path: "/pencarian",
@@ -46,6 +48,7 @@ const routes = [
     component: PencarianQuranku,
     meta: {
       title: "Pencarian",
+      backPath: "/"
     },
   },
   {
