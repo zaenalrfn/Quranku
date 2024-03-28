@@ -23,11 +23,12 @@
         >
           <h3 class="text-base font-medium">Terakhir baca</h3>
           <h1 class="text-2xl font-bold text-text_color_2 pt-2 pb-4">
-            Al-Fatihah
+            {{ infoSurah.name_id }}
           </h1>
           <div class="ayat-juz flex gap-2">
-            <p class="text-text_color_2 text-xs opacity-75">Ayat 1</p>
-            <p class="text-text_color_2 text-xs opacity-75">Juz 1</p>
+            <p class="text-text_color_2 text-xs opacity-75">
+              {{ infoSurah.number_of_verses }} Ayat
+            </p>
           </div>
         </div>
       </router-link>
@@ -106,6 +107,14 @@ export default {
   name: "PageUtama",
   props: {
     msg: String,
+  },
+  data() {
+    return {
+      infoSurah: [],
+    };
+  },
+  mounted() {
+    this.infoSurah = JSON.parse(localStorage.getItem("INFO-SURAH"));
   },
 };
 </script>
